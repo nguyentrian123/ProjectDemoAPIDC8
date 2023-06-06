@@ -2234,11 +2234,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NguyenTriAn\\Trainning\\ProjectAPI\\TestWebAPI\\TestWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\ntan2\\Desktop\\ProjectDemoAPIDC8\\TestWebAPI\\TestWebAPI.csproj",
       "projectName": "TestWebAPI",
-      "projectPath": "D:\\NguyenTriAn\\Trainning\\ProjectAPI\\TestWebAPI\\TestWebAPI.csproj",
+      "projectPath": "C:\\Users\\ntan2\\Desktop\\ProjectDemoAPIDC8\\TestWebAPI\\TestWebAPI.csproj",
       "packagesPath": "C:\\Users\\ntan2\\.nuget\\packages\\",
-      "outputPath": "D:\\NguyenTriAn\\Trainning\\ProjectAPI\\TestWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\ntan2\\Desktop\\ProjectDemoAPIDC8\\TestWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ntan2\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2256,11 +2256,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\NguyenTriAn\\Trainning\\ProjectAPI\\ProjectWebAPIDotnet3-main\\demoAPIWeb\\LoggerService\\LoggerService.csproj": {
-              "projectPath": "D:\\NguyenTriAn\\Trainning\\ProjectAPI\\ProjectWebAPIDotnet3-main\\demoAPIWeb\\LoggerService\\LoggerService.csproj"
+            "C:\\Users\\ntan2\\Desktop\\ProjectDemoAPIDC8\\ProjectWebAPIDotnet3-main\\demoAPIWeb\\LoggerService\\LoggerService.csproj": {
+              "projectPath": "C:\\Users\\ntan2\\Desktop\\ProjectDemoAPIDC8\\ProjectWebAPIDotnet3-main\\demoAPIWeb\\LoggerService\\LoggerService.csproj"
             },
-            "D:\\NguyenTriAn\\Trainning\\ProjectAPI\\ProjectWebAPIDotnet3-main\\demoAPIWeb\\Repository\\Repository.csproj": {
-              "projectPath": "D:\\NguyenTriAn\\Trainning\\ProjectAPI\\ProjectWebAPIDotnet3-main\\demoAPIWeb\\Repository\\Repository.csproj"
+            "C:\\Users\\ntan2\\Desktop\\ProjectDemoAPIDC8\\ProjectWebAPIDotnet3-main\\demoAPIWeb\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\ntan2\\Desktop\\ProjectDemoAPIDC8\\ProjectWebAPIDotnet3-main\\demoAPIWeb\\Repository\\Repository.csproj"
             }
           }
         }

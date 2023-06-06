@@ -19,14 +19,6 @@ namespace TestWebAPI.Controllers
             _repository = repositoryManager;
         }
 
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            _repository.Company.GetAllCompanies(true);
-            _repository.Employee.GetAllEmployees(true);
-            return new string[] { "value1", "value2" };
-        }
-
         [HttpGet("/getlog")]
         public IEnumerable<string> GetLog()
         {

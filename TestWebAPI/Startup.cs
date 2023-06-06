@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Contracts.Logger;
+using Contracts.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -12,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog;
+using Repository;
+using TestWebAPI.Extension;
 
 namespace demoAPIWeb
 {
@@ -35,12 +39,14 @@ namespace demoAPIWeb
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryManager();
             services.AddAutoMapper(typeof(Startup));
+            services.AddScoped<ICompanyRepository, CompanyRepository>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddControllers();
         }
 
        
         // add middleware on request pipeline
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerManager logger)
         {
             if (env.IsDevelopment())
             {
@@ -58,7 +64,7 @@ namespace demoAPIWeb
             {
                 ForwardedHeaders = ForwardedHeaders.All
             });
-
+            app.UseMiddleware<ExceptionMiddlewareExtensions>();
 
             app.UseRouting();
 
